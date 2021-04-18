@@ -40,8 +40,8 @@ Servo servo04;
 Servo servo05;
 Servo servo06;
 
-int servo1Pos, servo2Pos, servo3Pos, servo4Pos, servo5Pos, servo6Pos; // current position
-int servo1PPos, servo2PPos, servo3PPos, servo4PPos, servo5PPos, servo6PPos; // previous position
+int servo1Pos, servo2Pos, servo3Pos, servo4Pos, servo5Pos, servo6Pos; // trenutna pozicija
+int servo1PPos, servo2PPos, servo3PPos, servo4PPos, servo5PPos, servo6PPos; // prethodna pozicija
 
 void setup()
 {
@@ -71,10 +71,7 @@ void setup()
   servo06.write(servo6PPos);
 }
 void loop() {
-  if (irrecv.decode(&results)) { //if we have received an IR signal
-    /*if (results.value == 0xFFFFFFFF) {
-      results.value = Previous;
-    }*/
+  if (irrecv.decode(&results)) { //Da li je prijemnik dobio signal koji salje predajnik
     switch (results.value) {
       case btn1: //Ukoliko je pritisnuto dugme 1 uradi sledece:
         servo1oznacen = 1; //Servo motor 1 oznacen sve
@@ -203,18 +200,17 @@ void loop() {
           delay(100);
         }
     }
-    irrecv.resume();
+    irrecv.resume(); // Restartujemo ISR i omogucavamo primanje novog signala
   }
-  //Previous = results.value;
-
-
-  /*if (irrecv.decode(&results))// Returns 0 if no data ready, 1 if data ready.
+  
+  //Kod za uzimanje HEX kodova dugmica sa daljinskog koji se koristi
+  /*if (irrecv.decode(&results))
     {
-    int readResults = results.value;// Results of decoding are stored in result.value
+    int readResults = results.value;
     Serial.println(" ");
     Serial.print("Code: ");
-    Serial.println(readResults); //prints the value a a button press
+    Serial.println(readResults);
     Serial.println(" ");
-    irrecv.resume(); // Restart the ISR state machine and Receive the next value
+    irrecv.resume();
     }*/
 }
