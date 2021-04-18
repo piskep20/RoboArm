@@ -4,7 +4,7 @@ Sastoji se iz 6 servo motora kao i nekoliko delova odstampanih 3d stampacem, kao
 Za IR prijmenik koji je koriscen u ovom projektu odgovara vecina klasicnih daljinskih upravljaca
 
 Povezivanje:
-![](https://i.imgur.com/NvnhIEz.jpg)
+![](https://i.imgur.com/sSWehXl.jpg)
 
 Pre koriscenja ruke neophodno je podesiti HEX-a kodove dugmica koje ce te koristiti na vasem daljinskom upravljacu
 
