@@ -20,6 +20,7 @@ Nakon toga pritisnite dugme za koje zelite da saznate HEX-a kod i prikazace vam 
 ![](https://i.imgur.com/4ymVVVh.png)
 
 Nakon sto to odradite potrebno je da kopirate taj HEX-a kod i definisete dugme pod imenom koje zelite
+
 **Neophodno je da nakon definisanja dugmeta postavite 0x(pa HEX-a kod dugmeta)** kako bi dalje u programu, prijemnik mogao da procita primljeni signal
 ![](https://i.imgur.com/RE5OkVa.png)
 ![](https://i.imgur.com/R1oJH3X.png)
