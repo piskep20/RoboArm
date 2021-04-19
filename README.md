@@ -1,6 +1,6 @@
 # RoboArm
 Projekat baziran na Arduinu
-> Sastoji se iz 6 servo motora i nekoliko delova odstampanih 3d stampacem, kao i IR prijemnikom
+> Sastoji se iz 6 servo motora i nekoliko delova odstampanih 3d stampacem, kao i IR prijemnikom.
 > Za IR prijmenik koji je koriscen u ovom projektu odgovara vecina klasicnih daljinskih upravljaca
 
 **Povezivanje:**
