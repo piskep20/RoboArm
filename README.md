@@ -1,9 +1,12 @@
 # RoboArm
 Projekat baziran na Arduinu
-> Sastoji se iz 6 servo motora kao i nekoliko delova odstampanih 3d stampacem, kao i IR prijemnikom
+> Sastoji se iz 6 servo motora i nekoliko delova odstampanih 3d stampacem, kao i IR prijemnikom
 > Za IR prijmenik koji je koriscen u ovom projektu odgovara vecina klasicnih daljinskih upravljaca
 
 **Povezivanje:**
+**Crna zica predstavlja GND odnosno -**
+**Crvena zica pretstavlja VCC odnosno +**
+**Zuta zica pretstavlja DATA**
 ![](https://i.imgur.com/sSWehXl.jpg)
 
 Pre koriscenja ruke neophodno je podesiti **HEX-a** kodove dugmica koje ce te koristiti na vasem daljinskom upravljacu
@@ -16,7 +19,7 @@ Ostavicu kod za proveravanje HEX-a kodova dugmica u posebnom fajlu, neophodno je
 Kada ste prebacili program na vasu plocicu neophodno je da otvorite **Serial Monitor** i postavite **Baud rate na 9600**:
 ![](https://i.imgur.com/lwn6ub4.png)
 
-Nakon toga pritisnite dugme za koje zelite da saznate HEX-a kod i prikazace vam se kao tekst u Service Monitoring prozorcicu
+Nakon toga pritisnite dugme za koje zelite da saznate HEX-a kod i prikazace vam se kao tekst u Serial Monitor prozorcicu
 ![](https://i.imgur.com/4ymVVVh.png)
 
 Nakon sto to odradite potrebno je da kopirate taj HEX-a kod i definisete dugme pod imenom koje zelite
